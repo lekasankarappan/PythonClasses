@@ -1,0 +1,10 @@
+n1=34
+n2=33
+n3=n1*n2
+print(n3)
+#addition
+print(n1+n2)
+#subraction
+print(n1-n2)
+#division
+print(n1/n2)
