@@ -1,17 +1,15 @@
-from selenium.webdriver import Chrome,ChromeOptions
+from selenium.webdriver import Chrome
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
 import time
 
-ops=ChromeOptions()
-ops.add_argument("--disable-notifications")
-driver=Chrome(ChromeDriverManager().install(),options=ops)
-driver.get("https://www.google.in/")
-tag = driver.find_elements_by_tag_name("a")
-print("Total no of links" , len(tag))
-for link in tag:
-   print(link.text+" --- "+ link.get_attribute("href"))
-driver.quit()
+
+driver=Chrome(ChromeDriverManager().install())
+driver.get("https://www.google.com")
+#driver.find_element_by_xpath("//input[@class='gLFyf gsfi' and @name='q' and @type='text']").send_keys("Appium jobs",Keys.ENTER)
+
+driver.find_element_by_xpath("//input[@class='gLFyf gsfi'and @name='q' and @type='text' ]").send_keys("Appium job",Keys.ENTER)
+
 
 
 
