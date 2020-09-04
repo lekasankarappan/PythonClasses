@@ -15,7 +15,7 @@ time.sleep(4)
 listDate = op.driver.find_element_by_xpath("//div[contains(@class,'react-datepicker__day react-datepicker__day--022')]").click()
 #listDate[4].click()
 time.sleep(4)
-op.driver.find_element_by_xpath("//input[@id='hobbies-checkbox-1'and@value='1']").click()
+#op.driver.find_element_by_xpath("//input[@id='hobbies-checkbox-1'and@value='1']").click()
 time.sleep(4)
 
 op.driver.quit()
